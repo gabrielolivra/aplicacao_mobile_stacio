@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="JAVA" bpmnAble="false" formTarget="" functionCategory="" library="false" linkHelp="" multilayer="false" resourceType="JAVA" ruleDescription="cadastro_dentista" ruleName="cadastro_dentista" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="440.2000000000003" scrolly="-289.99999999999994" target="*=T!lP}R?K4?{AO2L#8x"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-326" y="132">
+    <mutation>
+      <arg id="ea7e650b" name="crm"/>
+      <arg id="fd58198f" name="email"/>
+      <arg id="4b370e4d" name="especialidade"/>
+      <arg id="86fe5a12" name="nome"/>
+      <arg id="a99aa50d" name="telefone"/>
+    </mutation>
+    <field customattributes="" name="NAME">cadastrar_dentista</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="bf{yx3=?^SRAPjRysGtg" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+        <field customattributes="" name="VAR">inserirDentista</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#aa2f00" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="DE5WFD.Vi6(U+V;BWf|R" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.insert','cronapi.database.Operations.insert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callreturn" valueconstant="">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22isNativeQuery%22:false,%22namespace%22:%22%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22DENTISTA%22,%22namespace%22:%22app.entity.DENTISTA%22,%22dataSourceOptions%22:%7B%22id%22:%22app.DENTISTA%22,%22customId%22:%22DENTISTA%22,%22customQueryName%22:%22app.DENTISTA%22,%22paramValues%22:%5B%5D,%22entityFullName%22:%22app.entity.DENTISTA%22,%22schemaFields%22:%5B%7B%22name%22:%22id%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22nome%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22especialidade%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22crm%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22telefone%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22email%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22_objectKey%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:true%7D%5D,%22type%22:%22entity%22,%22hasError%22:false,%22customName%22:%22DENTISTA%22,%22fullName%22:%22app.entity.DENTISTA%22,%22labelName%22:%22app.entity.DENTISTA%20(DENTISTA)%22%7D,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22crm%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22email%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22especialidade%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22nome%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22telefone%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22id%22,%22value%22:%22%22,%22type%22:%22string%22%7D%5D,%22rulesJoin%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false,%22isDatasource%22:false%7D,%22filter%22:%22insert%20into%20%5Cn%5CtDENTISTA%20%20%5Cn(crm,%20email,%20especialidade,%20nome,%20telefone,%20id)%5Cn%5Ctvalues%20%5Cn(:crm,%20:email,%20:especialidade,%20:nome,%20:telefone,%20:id)%22,%22entity%22:%22DENTISTA%22,%22entityFullName%22:%22app.entity.DENTISTA%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22crm%5C%22,%5C%22email%5C%22,%5C%22especialidade%5C%22,%5C%22nome%5C%22,%5C%22telefone%5C%22,%5C%22id%5C%22%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+              <arg name="crm"/>
+              <arg name="email"/>
+              <arg name="especialidade"/>
+              <arg name="nome"/>
+              <arg name="telefone"/>
+              <arg name="id"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*1Ldu_=7^yW4)mqW3T]f" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">crm</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="qFh:fOaxl5HnkeC5svx)" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">email</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="hc~L67w~sh=/L,m_oNb=" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">especialidade</field>
+              </block>
+            </value>
+            <value name="ARG3">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="[TtXmF_6T*]%YX%4H2d/" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">nome</field>
+              </block>
+            </value>
+            <value name="ARG4">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="$VRX/^%?u6|krYgX($Ql" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">telefone</field>
+              </block>
+            </value>
+            <value name="ARG5">
+              <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="QH8HdjAd+X/Ygl=`0^#x" multilayer="false" namespace="cronapi.util.Operations.generateUUID" origintype="procedures_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECria%20identificador%20universal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20identificador%20universal%20(UUID)%20e%20retorna%20como%20texto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.Operations.generateUUID','cronapi.util.Operations.generateUUID')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
+                <mutation name="{{cronapi.util.Operations.generateUUID}}" return-raw-type="cronapi.Var"/>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="PGiH@KkViKR_Qgvxjw:!" origintype="logic_boolean" output="true" score="9007199254740991" tooltip="Retorna verdadeiro ou falso." type="logic_boolean" valueconstant="">
+        <field customattributes="" name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="*=T!lP}R?K4?{AO2L#8x" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-382" y="173">
+    <mutation>
+      <arg id="65e3cd5a" name="data_consulta"/>
+      <arg id="9caa199c" name="id_dentista"/>
+      <arg id="06f65799" name="observacoes"/>
+      <arg id="e63d6976" name="id_paciente"/>
+      <arg id="b4828957" name="status"/>
+      <arg id="4710e059" name="tipo_consulta"/>
+      <arg id="6dae5243" name="forma_pagamento"/>
+      <arg id="08694585" name="valor"/>
+    </mutation>
+    <field customattributes="" name="NAME">cadastrar_agendamento</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="3X;BEr[:?Mz9t{{rm0i;" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+        <field customattributes="" name="VAR">id_consulta</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="AIcn[:XjobuSYovGy-+4" multilayer="false" namespace="cronapi.util.Operations.generateUUID" origintype="procedures_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECria%20identificador%20universal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20identificador%20universal%20(UUID)%20e%20retorna%20como%20texto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.Operations.generateUUID','cronapi.util.Operations.generateUUID')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
+            <mutation name="{{cronapi.util.Operations.generateUUID}}" return-raw-type="cronapi.Var"/>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="6mXH,`yQS2rknHW~+QN/" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+            <field customattributes="" name="VAR">inserir_consulta</field>
+            <value name="VALUE">
+              <block asynccall="false" colour="#aa2f00" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="P}Gx|q%rX[`xA!;5;14l" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.insert','cronapi.database.Operations.insert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callreturn" valueconstant="">
+                <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22isNativeQuery%22:false,%22namespace%22:%22%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22CONSULTAS%22,%22namespace%22:%22app.entity.CONSULTAS%22,%22dataSourceOptions%22:%7B%22id%22:%22app.CONSULTAS%22,%22customId%22:%22CONSULTAS%22,%22customQueryName%22:%22app.CONSULTAS%22,%22paramValues%22:%5B%5D,%22entityFullName%22:%22app.entity.CONSULTAS%22,%22schemaFields%22:%5B%7B%22name%22:%22id%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22data_consulta%22,%22type%22:%22DateTime%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22tipo_consulta%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22status%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22observacoes%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22deNTISTA%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22paCIENTE%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22_objectKey%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:true%7D,%7B%22name%22:%22deNTISTA_nome%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22paCIENTE_nome%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D%5D,%22type%22:%22entity%22,%22hasError%22:false,%22customName%22:%22CONSULTAS%22,%22fullName%22:%22app.entity.CONSULTAS%22,%22labelName%22:%22app.entity.CONSULTAS%20(CONSULTAS)%22%7D,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22id%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22data_consulta%22,%22value%22:%22%22,%22type%22:%22date%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22deNTISTA%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22observacoes%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22paCIENTE%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22status%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22tipo_consulta%22,%22value%22:%22%22,%22type%22:%22string%22%7D%5D,%22rulesJoin%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false,%22isDatasource%22:false%7D,%22filter%22:%22insert%20into%20%5Cn%5CtCONSULTAS%20%20%5Cn(id,%20data_consulta,%20deNTISTA,%20observacoes,%20paCIENTE,%20status,%20tipo_consulta)%5Cn%5Ctvalues%20%5Cn(:id,%20:data_consulta,%20:deNTISTA,%20:observacoes,%20:paCIENTE,%20:status,%20:tipo_consulta)%22,%22entity%22:%22CONSULTAS%22,%22entityFullName%22:%22app.entity.CONSULTAS%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22data_consulta%5C%22,%5C%22deNTISTA%5C%22,%5C%22observacoes%5C%22,%5C%22paCIENTE%5C%22,%5C%22status%5C%22,%5C%22tipo_consulta%5C%22%5D%22,%22wizardType%22:%22INSERT%22%7D" name="{{cronapi.database.Operations.insert}}">
+                  <arg name="id"/>
+                  <arg name="data_consulta"/>
+                  <arg name="deNTISTA"/>
+                  <arg name="observacoes"/>
+                  <arg name="paCIENTE"/>
+                  <arg name="status"/>
+                  <arg name="tipo_consulta"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="N]3Hl#um{i2q^Cp~_.gv" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">id_consulta</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="y]UIRs0Pn7WqZC9g{cL_" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">data_consulta</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="XkpyT)3Ju#]-mjC%uq8M" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">id_dentista</field>
+                  </block>
+                </value>
+                <value name="ARG3">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="/8Ti7lbBuM87f-.%;`4~" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">observacoes</field>
+                  </block>
+                </value>
+                <value name="ARG4">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="wYilWvY^4LW^l=)1F*%k" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">id_paciente</field>
+                  </block>
+                </value>
+                <value name="ARG5">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="Qg:b0!nzp=R|=Vq[G[pj" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">status</field>
+                  </block>
+                </value>
+                <value name="ARG6">
+                  <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="2S{[)WW@?/X7?moA.F#]" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                    <field customattributes="" name="VAR">tipo_consulta</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="MO4dE0^tzZkPRhu:qaeO" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+                <field customattributes="" name="VAR">inserir_pagamento</field>
+                <value name="VALUE">
+                  <block asynccall="false" colour="#aa2f00" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="MZ.!#]hszAqkO[5w}A4Y" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.insert','cronapi.database.Operations.insert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callreturn" valueconstant="">
+                    <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22isNativeQuery%22:false,%22namespace%22:%22%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22FORMA_PAGAMENTO%22,%22namespace%22:%22app.entity.FORMA_PAGAMENTO%22,%22dataSourceOptions%22:%7B%22id%22:%22app.FORMA_PAGAMENTO%22,%22customId%22:%22FORMA_PAGAMENTO%22,%22customQueryName%22:%22app.FORMA_PAGAMENTO%22,%22paramValues%22:%5B%5D,%22entityFullName%22:%22app.entity.FORMA_PAGAMENTO%22,%22schemaFields%22:%5B%7B%22name%22:%22id%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22valor%22,%22type%22:%22Double%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22forma_pagamento%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22coNSULTAS%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22_objectKey%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:true%7D,%7B%22name%22:%22coNSULTAS_tipo_consulta%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D%5D,%22type%22:%22entity%22,%22hasError%22:false,%22customName%22:%22FORMA_PAGAMENTO%22,%22fullName%22:%22app.entity.FORMA_PAGAMENTO%22,%22labelName%22:%22app.entity.FORMA_PAGAMENTO%20(FORMA_PAGAMENTO)%22%7D,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22id%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22coNSULTAS%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22forma_pagamento%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22valor%22,%22value%22:%22%22,%22type%22:%22double%22%7D%5D,%22rulesJoin%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false,%22isDatasource%22:false%7D,%22filter%22:%22insert%20into%20%5Cn%5CtFORMA_PAGAMENTO%20%20%5Cn(id,%20coNSULTAS,%20forma_pagamento,%20valor)%5Cn%5Ctvalues%20%5Cn(:id,%20:coNSULTAS,%20:forma_pagamento,%20:valor)%22,%22entity%22:%22FORMA_PAGAMENTO%22,%22entityFullName%22:%22app.entity.FORMA_PAGAMENTO%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22coNSULTAS%5C%22,%5C%22forma_pagamento%5C%22,%5C%22valor%5C%22%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+                      <arg name="id"/>
+                      <arg name="coNSULTAS"/>
+                      <arg name="forma_pagamento"/>
+                      <arg name="valor"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="28Cm*fL65Acm`$ev?@h%" multilayer="false" namespace="cronapi.util.Operations.generateUUID" origintype="procedures_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECria%20identificador%20universal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20identificador%20universal%20(UUID)%20e%20retorna%20como%20texto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.Operations.generateUUID','cronapi.util.Operations.generateUUID')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
+                        <mutation name="{{cronapi.util.Operations.generateUUID}}" return-raw-type="cronapi.Var"/>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="7KRCOE(N6g]Q6(xuVo*X" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                        <field customattributes="" name="VAR">id_consulta</field>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="82{pC^7nc?*^??5ECn}]" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                        <field customattributes="" name="VAR">forma_pagamento</field>
+                      </block>
+                    </value>
+                    <value name="ARG3">
+                      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="r?%Yw@YJx!9,3}38A,GL" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                        <field customattributes="" name="VAR">valor</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="*=T!lP}R?K4?{AO2L#8x" id="yyZ70QfT`9Ge,}}8CRA," origintype="logic_boolean" output="true" score="9007199254740991" tooltip="Retorna verdadeiro ou falso." type="logic_boolean" valueconstant="">
+        <field customattributes="" name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+  <block asynccall="false" colour="#fca03b" datasourcetype="" id="d19?P^6iOLGg%lTYIWS6" origintype="procedures_defreturn" output="false" score="9007199254740991" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" valueconstant="" x="-277" y="412">
+    <mutation>
+      <arg id="65cbb211" name="cpf"/>
+      <arg id="5059c99e" name="data_nascimento"/>
+      <arg id="ef8f1e59" name="email"/>
+      <arg id="692cbc31" name="endereco"/>
+      <arg id="2e06a259" name="nome"/>
+      <arg id="1e96b810" name="telefone"/>
+    </mutation>
+    <field customattributes="" name="NAME">cadastrar_paciente</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="uyR4pw4;nuyJCi6.H9$F" origintype="variables_set" output="false" score="9007199254740991" tooltip="Define esta variável para o valor da entrada." type="variables_set" valueconstant="">
+        <field customattributes="" name="VAR">inserir_paciente</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#aa2f00" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="YoQ64*2i5VhC[q5:AJD=" multilayer="false" namespace="cronapi.database.Operations.insert" origintype="procedures_sql_insert_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EInserir%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20novo%20registro%20no%20banco%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Tabela%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cdiv%3E%20Par%C3%A2metros%20a%20serem%20passados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.database.Operations.insert','cronapi.database.Operations.insert')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_sql_insert_callreturn" valueconstant="">
+            <mutation data="%7B%22queryBuilderJson%22:%7B%22isValid%22:true,%22isEmpty%22:false,%22operationType%22:%22field%22,%22isNativeQuery%22:false,%22namespace%22:%22%22,%22type%22:%22insert%22,%22rulesEntity%22:%5B%7B%22entity%22:%22PACIENTE%22,%22namespace%22:%22app.entity.PACIENTE%22,%22dataSourceOptions%22:%7B%22id%22:%22app.PACIENTE%22,%22customId%22:%22PACIENTE%22,%22customQueryName%22:%22app.PACIENTE%22,%22paramValues%22:%5B%5D,%22entityFullName%22:%22app.entity.PACIENTE%22,%22schemaFields%22:%5B%7B%22name%22:%22id%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22nome%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22cpf%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22data_nascimento%22,%22type%22:%22DateTime%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22endereco%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22telefone%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22email%22,%22type%22:%22String%22,%22nullable%22:true,%22notEmpty%22:false,%22key%22:false%7D,%7B%22name%22:%22_objectKey%22,%22type%22:%22String%22,%22nullable%22:false,%22notEmpty%22:false,%22key%22:true%7D%5D,%22type%22:%22entity%22,%22hasError%22:false,%22customName%22:%22PACIENTE%22,%22fullName%22:%22app.entity.PACIENTE%22,%22labelName%22:%22app.entity.PACIENTE%20(PACIENTE)%22%7D,%22alias%22:%22%22%7D%5D,%22rulesSelect%22:%5B%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22id%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22cpf%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22data_nascimento%22,%22value%22:%22%22,%22type%22:%22date%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22email%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22endereco%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22nome%22,%22value%22:%22%22,%22type%22:%22string%22%7D,%7B%22func%22:%22%22,%22operator%22:%22%22,%22field%22:%22telefone%22,%22value%22:%22%22,%22type%22:%22string%22%7D%5D,%22rulesJoin%22:%5B%5D,%22rulesGroupBy%22:%5B%5D,%22rulesHaving%22:%5B%5D,%22rulesOrderBy%22:%5B%5D,%22isRawSql%22:false,%22multiTenant%22:false,%22paginatorAutomatic%22:false,%22pagination%22:false,%22isDatasource%22:false%7D,%22filter%22:%22insert%20into%20%5Cn%5CtPACIENTE%20%20%5Cn(id,%20cpf,%20data_nascimento,%20email,%20endereco,%20nome,%20telefone)%5Cn%5Ctvalues%20%5Cn(:id,%20:cpf,%20:data_nascimento,%20:email,%20:endereco,%20:nome,%20:telefone)%22,%22entity%22:%22PACIENTE%22,%22entityFullName%22:%22app.entity.PACIENTE%22,%22type%22:%22F%22,%22params%22:%22%5B%5C%22id%5C%22,%5C%22cpf%5C%22,%5C%22data_nascimento%5C%22,%5C%22email%5C%22,%5C%22endereco%5C%22,%5C%22nome%5C%22,%5C%22telefone%5C%22%5D%22%7D" name="{{cronapi.database.Operations.insert}}">
+              <arg name="id"/>
+              <arg name="cpf"/>
+              <arg name="data_nascimento"/>
+              <arg name="email"/>
+              <arg name="endereco"/>
+              <arg name="nome"/>
+              <arg name="telefone"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#487f7f" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="%$2Q$+GWKJm|W?~1N+**" multilayer="false" namespace="cronapi.util.Operations.generateUUID" origintype="procedures_callreturn" output="true" returntype="ObjectType.VOID" score="9007199254740991" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECria%20identificador%20universal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20identificador%20universal%20(UUID)%20e%20retorna%20como%20texto%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20onclick=%22Blockly.Search.goToDoc('https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.util.Operations.generateUUID','cronapi.util.Operations.generateUUID')%22%20href=%22javascript:void(0)%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn" valueconstant="">
+                <mutation name="{{cronapi.util.Operations.generateUUID}}" return-raw-type="cronapi.Var"/>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="=!gB+RYX$~PV(K$Aq/ak" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">cpf</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="bC(J%D-wBJ[vlJ7U:TX7" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">data_nascimento</field>
+              </block>
+            </value>
+            <value name="ARG3">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="a6G/UW;*vE}w4W9RM:h2" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">email</field>
+              </block>
+            </value>
+            <value name="ARG4">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="n(CtQ9xDyWMw;;RGy=:U" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">endereco</field>
+              </block>
+            </value>
+            <value name="ARG5">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="g~M5J3G@KXGxR2PyZoVm" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">nome</field>
+              </block>
+            </value>
+            <value name="ARG6">
+              <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="1xyP[t2+P)QUw/O}4mFU" origintype="variables_get" output="true" score="9007199254740991" tooltip="Retorna o valor desta variável." type="variables_get" valueconstant="">
+                <field customattributes="" name="VAR">telefone</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#5b80a5" datasourcetype="" dependencyby="d19?P^6iOLGg%lTYIWS6" id="mSc3^R4Hs{NUn$HOD}fj" origintype="logic_boolean" output="true" score="9007199254740991" tooltip="Retorna verdadeiro ou falso." type="logic_boolean" valueconstant="">
+        <field customattributes="" name="BOOL">TRUE</field>
+      </block>
+    </value>
+  </block>
+</blockly>
